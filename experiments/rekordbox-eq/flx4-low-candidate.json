@@ -1,0 +1,8 @@
+{
+  "name": "FLX4 Deck 1 LOW EQ (unverified vendor candidate)",
+  "channel": 1,
+  "encoding": "cc14",
+  "msb_cc": 15,
+  "lsb_cc": 47,
+  "order": "msb-first"
+}

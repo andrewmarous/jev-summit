@@ -1,0 +1,7 @@
+# Contrastive Language Models (CLM-v0.1-8B)
+
+Source: [Contrastive-LM/CLM repository](https://github.com/Contrastive-LM/CLM); [archived README](../../raw/system-one/clm-repository-readme.md), sections “How it works,” “Quickstart,” and “Roadmap.” The repository links to a [Notion blog](https://contrastive-lm.notion.site) and cites it as a blog post; **no independently verified peer-reviewed paper or arXiv preprint was found**. Do not confuse CLM with CALM or conventional causal language modeling.
+
+CLM trains state and action encoders with a contrastive InfoNCE objective. The repository describes each as a frozen Qwen3-8B embedding backbone plus a trainable projection head. At inference, embed the current text state; embed candidate actions once and cache them where possible; score state–action alignment and select/rank candidates, without autoregressive action generation. The served implementation uses a vLLM embedding endpoint and a separate scoring service. Fresh candidate text, changed state, tokenization, network calls and embedding inference still cost time. Candidate sets must cover the intended actions; scores do not prove safety or calibration.
+
+The repository reports up to 9× lower latency than Jev on selected tasks; this is an **author-reported benchmark**, not a latency guarantee for this project. Its roadmap lists vision and multimodal support as future work: the archived v0.1 interface uses text, not live audio. Check the model card and runtime before choosing a deployment.
