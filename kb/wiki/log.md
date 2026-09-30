@@ -37,3 +37,7 @@ Saved [deck and mixer board events](board-events.md) from the [top-view image](s
 ## [2026-09-29] ingest | Standalone hardware architecture and Rust deployment
 
 Added [research links](../raw/standalone-hardware-architecture-2026-09-29.md), [source note](sources/standalone-hardware-architecture.md), and [deployment assessment](standalone-deployment.md). Updated the [index](index.md). The research distinguishes third-party firmware reports, service documentation, and vendor source distribution. No free-memory measurement, plugin support, or onboard Jev deployment is established.
+
+## [2026-09-30] query | Performance application state
+
+Added [the performance-state inventory](performance-state.md) and updated [the index](index.md). The proposal defines a decision-model snapshot from tracks, decks, timing, mixer routing, effects, monitoring, and interaction context. It cites the inspected local Mixxx sources and separates core state, sound measurements, and derived summaries. Replication, input logs, transitions, and capture mechanisms are outside its scope. XDJ-AZ and Rekordbox readback remain unverified.

@@ -23,6 +23,7 @@ Start here for queries. See [the schema](../AGENTS.md) for maintenance rules and
 - [Vision and boundaries](vision.md) — Jev at a DJ board, including private cue selection.
 - [System model](system-model.md) — proposed control and observation paths, with open questions.
 - [XDJ-AZ board events](board-events.md) — proposed event inventory for one deck, one mixer channel, and shared mixer controls visible in the rendering.
+- [Performance application state](performance-state.md) — proposed decision-model snapshot inventory, informed by Mixxx: tracks, decks, timing, mixer routing, effects, monitoring, and interaction context.
 - [System 1 inference](system-one-inference.md) — three fast-path architectures and Jev's open latency measurements.
 - [Low-memory standalone deployment](standalone-deployment.md) — hardware evidence, Rust design proposal, and deployment questions.
 
